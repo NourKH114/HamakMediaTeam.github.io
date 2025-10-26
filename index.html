@@ -1,0 +1,1097 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>دليل السياسات والإجراءات - الفريق الإعلامي | كلية الهمك</title>
+  <meta name="description" content="دليل السياسات والإجراءات للفريق الإعلامي في كلية الهندسة الميكانيكية والكهربائية - جامعة دمشق. كل ما يحتاجه المتطوع للبدء والاحتراف ضمن بيئة عادلة واحترافية.">
+  <meta property="og:title" content="دليل السياسات والإجراءات - الفريق الإعلامي | كلية الهمك">
+  <meta property="og:description" content="اقرأ السياسات، الحقوق والمسؤوليات، الهيكلية، الإنتاج الإعلامي، التدريب، مدونة السلوك، حل المشكلات، والمغادرة.">
+  <meta property="og:image" content="https://drive.google.com/uc?id=1og1kFi6koJ28lXr7ApHDbFWKZzm3jNPe">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --primary: #0d5e86;
+      --primary-700:#0b4f72;
+      --primary-900:#083d57;
+      --accent:  #f1c40f;
+      --accent-700:#d4aa00;
+      --special: #e74c3c;
+      --special-700:#c0392b;
+      --bg:      #f5f9fc;
+      --card:    #ffffff;
+      --text:    #0f2b3a;
+      --muted:   #6d7c8b;
+      --border:  #e6edf3;
+      --ring:    rgba(13,94,134,.18);
+      --shadow:  0 10px 30px rgba(13,94,134,.12);
+      --radius:  14px;
+    }
+    
+    [data-theme="dark"]{
+      --primary: #4a9fd8;
+      --primary-700:#3a8fc8;
+      --primary-900:#2a7fb8;
+      --accent:  #f1c40f;
+      --accent-700:#d4aa00;
+      --special: #e74c3c;
+      --special-700:#c0392b;
+      --bg:      #0a1929;
+      --card:    #132f4c;
+      --text:    #e3f2fd;
+      --muted:   #b0bec5;
+      --border:  #1e3a52;
+      --ring:    rgba(74,159,216,.25);
+      --shadow:  0 10px 30px rgba(0,0,0,.4);
+    }
+    
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{
+      font-family:"Cairo", system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Kufi Arabic", sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.85;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    a{color:var(--primary);text-decoration:none}
+    img{max-width:100%;height:auto}
+    .container{width:min(1200px,92vw);margin-inline:auto}
+    
+    /* Header - No longer sticky */
+    .site-header{
+      background:linear-gradient(180deg,var(--primary-900),var(--primary));
+      color:#fff;box-shadow:0 6px 24px rgba(0,0,0,.12);
+    }
+    [data-theme="dark"] .site-header{
+      background:linear-gradient(180deg,#1a2332,#132f4c);
+    }
+    
+    .brand{
+      display:flex;align-items:center;gap:14px;padding:14px 0;
+    }
+    .brand img{width:54px;height:54px;border-radius:50%;background:#fff;object-fit:cover;box-shadow:0 4px 14px rgba(0,0,0,.15)}
+    .brand .title{display:flex;flex-direction:column}
+    .brand .title b{font-size:1.25rem;letter-spacing:.3px}
+    .brand .title span{opacity:.9;font-size:.98rem}
+    
+    /* Utility bar */
+    .utility{
+      display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+      padding:0 0 14px 0;
+    }
+    .actions{display:flex;gap:10px;flex-wrap:wrap}
+    .btn{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:10px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.25);
+      background:rgba(255,255,255,.12);color:#fff;cursor:pointer;font-weight:700;
+      transition:.2s ease;backdrop-filter:blur(6px);font-size:.95rem;
+    }
+    .btn:hover{transform:translateY(-1px);background:rgba(255,255,255,.18)}
+    .btn-accent{background:var(--accent);color:#1b1b1b;border-color:transparent;}
+    .btn-accent:hover{background:var(--accent-700);transform:translateY(-1px)}
+    
+    /* Survey buttons section */
+    .survey-section{
+      background:linear-gradient(135deg, rgba(255,255,255,.1), rgba(255,255,255,.03));
+      padding:14px 0;
+      border-top:1px solid rgba(255,255,255,.14);
+    }
+    .survey-buttons{
+      display:flex;gap:10px;flex-wrap:wrap;
+    }
+    .survey-btn{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:10px 16px;border-radius:999px;
+      background:rgba(255,255,255,.15);color:#fff;
+      border:1px solid rgba(255,255,255,.3);
+      cursor:pointer;font-weight:700;font-size:.9rem;
+      transition:.2s ease;text-decoration:none;
+    }
+    .survey-btn:hover{
+      background:rgba(255,255,255,.25);
+      transform:translateY(-1px);
+    }
+    .survey-btn svg{width:18px;height:18px}
+    
+    /* Tabs bar */
+    .tabs{
+      border-top:1px solid rgba(255,255,255,.14);
+      background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.03));
+      backdrop-filter:blur(4px);
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .tablist{
+      display:flex;gap:8px;padding:10px 0;margin:0;list-style:none;
+      scrollbar-width:thin;
+      scrollbar-color: rgba(255,255,255,.3) transparent;
+      min-width: min-content;
+    }
+    .tablist::-webkit-scrollbar{height:6px}
+    .tablist::-webkit-scrollbar-track{background:transparent}
+    .tablist::-webkit-scrollbar-thumb{background:rgba(255,255,255,.3);border-radius:3px}
+    .tablist::-webkit-scrollbar-thumb:hover{background:rgba(255,255,255,.5)}
+    
+    .tab-btn{
+      appearance:none;border:none;background:transparent;color:#fff;opacity:.9;cursor:pointer;
+      padding:10px 16px;border-radius:999px;font-weight:800;letter-spacing:.3px;display:flex;align-items:center;gap:10px;
+      border:1px solid rgba(255,255,255,.2);transition:.2s ease;white-space:nowrap;
+      flex-shrink: 0;
+    }
+    .tab-btn svg{opacity:.9;flex-shrink:0}
+    .tab-btn:hover{background:rgba(255,255,255,.12)}
+    .tab-btn[aria-selected="true"]{
+      background:#fff;color:var(--primary-900);border-color:#fff;
+      box-shadow:0 8px 18px rgba(255,255,255,.18), inset 0 0 0 2px var(--accent);
+    }
+    .tab-btn.special-tab{
+      background:linear-gradient(135deg, var(--special), var(--special-700));
+      border:2px solid rgba(255,255,255,.4);
+      color:#fff;
+      box-shadow:0 4px 12px rgba(231,76,60,.3);
+    }
+    .tab-btn.special-tab:hover{
+      transform:translateY(-2px);
+      box-shadow:0 6px 18px rgba(231,76,60,.4);
+    }
+    .tab-btn.special-tab[aria-selected="true"]{
+      background:#fff;
+      color:var(--special);
+      border:2px solid var(--special);
+      box-shadow:0 8px 18px rgba(231,76,60,.25);
+    }
+    [data-theme="dark"] .tab-btn[aria-selected="true"]{
+      background:var(--card);color:var(--primary);
+    }
+    [data-theme="dark"] .tab-btn.special-tab[aria-selected="true"]{
+      background:var(--card);
+      color:var(--special);
+    }
+    
+    /* Hero */
+    .hero{
+      position:relative;
+      background:radial-gradient(1200px 400px at 85% -10%, rgba(241,196,15,.18), transparent 50%),
+        linear-gradient(180deg,var(--primary),var(--primary-700));
+      color:#fff;padding:34px 0 26px 0;
+    }
+    [data-theme="dark"] .hero{
+      background:radial-gradient(1200px 400px at 85% -10%, rgba(241,196,15,.12), transparent 50%),
+        linear-gradient(180deg,#1a2332,#0f1e2e);
+    }
+    
+    .hero .wrap{display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .hero .logo-hero{width:86px;height:86px;border-radius:50%;background:#fff;padding:8px;box-shadow:0 8px 28px rgba(0,0,0,.18)}
+    .hero h1{margin:0;font-size:1.6rem}
+    .hero p{margin:.4rem 0 0 0;opacity:.95}
+    
+    /* Panels */
+    .panels{padding:28px 0 60px 0}
+    .panel{
+      display:none;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
+      box-shadow:var(--shadow);padding:24px;margin-bottom:18px;
+    }
+    .panel.active{display:block;animation:fade .22s ease}
+    @keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+    .panel h2{margin-top:0;color:var(--primary-900);font-size:1.35rem}
+    [data-theme="dark"] .panel h2{color:var(--primary)}
+    
+    .grid{
+      display:grid;gap:16px;grid-template-columns:1fr; 
+    }
+    @media (min-width:920px){
+      .grid{grid-template-columns:1fr 1fr}
+    }
+    .card{
+      background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;
+      box-shadow:0 6px 20px rgba(13,94,134,.06);
+    }
+    [data-theme="dark"] .card{
+      box-shadow:0 6px 20px rgba(0,0,0,.3);
+    }
+    
+    .card h3{margin-top:0;color:var(--primary-700);font-size:1.15rem}
+    [data-theme="dark"] .card h3{color:var(--primary)}
+    
+    .badge{
+      display:inline-flex;align-items:center;gap:8px;background:rgba(13,94,134,.08);color:var(--primary-900);
+      border:1px dashed var(--primary-700);padding:6px 10px;border-radius:999px;font-weight:800;font-size:.92rem
+    }
+    .badge.special{
+      background:rgba(231,76,60,.1);
+      color:var(--special);
+      border-color:var(--special);
+    }
+    [data-theme="dark"] .badge{
+      background:rgba(74,159,216,.15);color:var(--primary);border-color:var(--primary);
+    }
+    [data-theme="dark"] .badge.special{
+      background:rgba(231,76,60,.15);
+      color:#ff6b6b;
+      border-color:#ff6b6b;
+    }
+    
+    ul{padding-right:1.2rem;margin:.6rem 0}
+    li{margin:.28rem 0}
+    .note{
+      background:linear-gradient(180deg,#fff, #fbfdff);border:1px solid var(--border);border-right:4px solid var(--accent);
+      padding:14px;border-radius:12px;margin:12px 0
+    }
+    [data-theme="dark"] .note{
+      background:linear-gradient(180deg,var(--card), rgba(19,47,76,.8));
+    }
+    
+    mark{background: #fff0a6;padding:0 .2em;border-radius:.25em;color:#000}
+    [data-theme="dark"] mark{background:#f39c12;color:#000}
+    
+    /* Gallery */
+    .gallery{
+      display:grid;
+      gap:20px;
+      grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+      margin:20px 0;
+    }
+    .gallery-item{
+      position:relative;
+      border-radius:12px;
+      overflow:hidden;
+      box-shadow:0 8px 24px rgba(0,0,0,.15);
+      transition:.3s ease;
+      cursor:pointer;
+    }
+    .gallery-item:hover{
+      transform:translateY(-5px);
+      box-shadow:0 12px 32px rgba(0,0,0,.25);
+    }
+    .gallery-item img{
+      width:100%;
+      height:auto;
+      display:block;
+    }
+    
+    /* Footer */
+    footer{
+      margin:30px 0 80px 0;text-align:center;color:var(--muted)
+    }
+    
+   /* Floating buttons */
+/* Floating buttons */
+.floating-buttons{
+  position:fixed;
+  bottom:18px;
+  left:18px;
+  z-index:1000;
+  display:none; /* مخفي افتراضياً */
+}
+.floating-buttons.show {
+  display:flex; /* يظهر عند إضافة كلاس show */
+  flex-direction:column;
+  gap:10px;
+  animation: fadeIn 0.3s ease;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.float-btn{
+  background:var(--primary);
+  color:#fff;
+  border:none;
+  border-radius:999px;
+  box-shadow:var(--shadow);
+  padding:10px 14px;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-weight:700;
+  transition:.2s ease;
+  font-size: 14px;
+}
+.float-btn:hover{
+  background:var(--primary-700);
+  transform:translateY(-2px);
+  box-shadow: 0 12px 30px rgba(13,94,134,.25);
+}
+    .float-btn{
+      background:var(--primary);color:#fff;border:none;border-radius:999px;box-shadow:var(--shadow);
+      padding:10px 14px;cursor:pointer;display:flex;align-items:center;gap:8px;
+      font-weight:700;transition:.2s ease;
+    }
+    .float-btn:hover{background:var(--primary-700);transform:translateY(-2px)}
+    
+    @media print{
+      .site-header, .floating-buttons{display:none}
+      .panel{display:block;border:none;box-shadow:none}
+      body{background:#fff}
+    }
+    /* Social Media Buttons */
+.social-links {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.15);
+  border: 1px solid rgba(255,255,255,.25);
+  color: #fff;
+  transition: .3s ease;
+  text-decoration: none;
+}
+.social-btn:hover {
+  transform: translateY(-3px) scale(1.1);
+  background: rgba(255,255,255,.25);
+  box-shadow: 0 8px 20px rgba(0,0,0,.2);
+}
+.social-btn.instagram:hover {
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  border-color: transparent;
+}
+.social-btn.telegram:hover {
+  background: #0088cc;
+  border-color: #0088cc;
+}
+.social-btn svg {
+  width: 20px;
+  height: 20px;
+}
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <img src="https://i.imgur.com/hiqdYjs.jpeg" alt="شعار كلية الهندسة الميكانيكية ">
+        <div class="title">
+          <b>الفريق الإعلامي — كلية الهمك</b>
+          <span>دليل السياسات والإجراءات</span>
+        </div>
+      </div>
+      <div class="utility">
+        <div class="actions">
+          <button class="btn" id="themeToggle" title="تبديل المظهر الفاتح/الداكن">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+            <span id="themeText">الوضع الداكن</span>
+          </button>
+          
+          <!-- أزرار السوشال ميديا الجديدة -->
+          <div class="social-links">
+            <a href="https://www.instagram.com/hamak.vibes?igsh=MW9jYjF4YzQ4NXUyaA==" 
+               target="_blank" 
+               class="social-btn instagram" 
+               title="تابعونا على Instagram"
+               aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1112.324 0 6.162 6.162 0 01-12.324 0zM12 16a4 4 0 110-8 4 4 0 010 8zm4.965-10.405a1.44 1.44 0 112.881.001 1.44 1.44 0 01-2.881-.001z"/>
+              </svg>
+            </a>
+            
+            <a href="https://t.me/hamakmedia" 
+               target="_blank" 
+               class="social-btn telegram" 
+               title="تابعونا على Telegram"
+               aria-label="Telegram">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Survey buttons section -->
+      <div class="survey-section">
+        <div class="container">
+          <div class="survey-buttons">
+            <a href="https://forms.gle/8LgJaRDGqfCruG9w5" target="_blank" class="survey-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 11l3 3 8-8M3 12a9 9 0 1018 0 9 9 0 00-18 0z"/>
+              </svg>
+              استطلاع التطوير
+            </a>
+            <a href="https://forms.gle/twNAJJrgfeimUBRf7" target="_blank" class="survey-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+              </svg>
+              تسجيل الأعمال
+            </a>
+            <a href="https://forms.gle/1KaSH29yXJ1KvMk79" target="_blank" class="survey-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              الشكاوى والملاحظات
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tabs -->
+    <nav class="tabs">
+      <div class="container">
+        <ul class="tablist" role="tablist" aria-label="الأقسام الرئيسية">
+          <li><button role="tab" class="tab-btn special-tab" id="tab-btn-works" data-tab="works">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            من أعمال الفريق
+          </button></li>
+          <li><button role="tab" class="tab-btn" id="tab-btn-intro" data-tab="intro" aria-selected="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3l9 7-1.5 1.3L12 6 4.5 11.3 3 10l9-7zm-7 9l7-5 7 5v8H5v-8z"/></svg>
+            المقدمة والرؤية
+          </button></li>
+          <li><button role="tab" class="tab-btn" id="tab-btn-rights" data-tab="rights">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M7 7h10v2H7V7zm0 4h10v2H7v-2zm0 4h7v2H7v-2zM4 5h16v14H4V5z" /></svg>
+            الحقوق والمسؤوليات
+          </button></li>
+          <li><button role="tab" class="tab-btn" id="tab-btn-org" data-tab="org">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M10 3h4v4h-4V3zm-7 7h4v4H3v-4zm14 0h4v4h-4v-4zM10 17h4v4h-4v-4zM8 9h8v2H8V9zm-1 6h10v2H7v-2z"/></svg>
+            الهيكلية والأقسام
+          </button></li>
+          <li><button role="tab" class="tab-btn" id="tab-btn-prod" data-tab="prod">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M4 4h16v4H4V4zm0 6h10v10H4V10zm12 0h4v10h-4V10z"/></svg>
+            الإنتاج الإعلامي
+          </button></li>
+          <li><button role="tab" class="tab-btn" id="tab-btn-train" data-tab="train">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3l9 4.5-9 4.5L3 7.5 12 3zm0 10.5l9 4.5-9 4.5-9-4.5 9-4.5z"/></svg>
+            التدريب والمدخل
+          </button></li>
+          <li><button role="tab" class="tab-btn" id="tab-btn-conduct" data-tab="conduct">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4h10v2H7V4zM6 7h12l-1 12H7L6 7zm5 2h2v7h-2V9zm-3 0h2v7H8V9zm6 0h2v7h-2V9z"/></svg>
+            السلوك والمكافآت
+          </button></li>
+          <li><button role="tab" class="tab-btn" id="tab-btn-issues" data-tab="issues">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z"/></svg>
+            حل المشكلات والتواصل
+          </button></li>
+          <li><button role="tab" class="tab-btn" id="tab-btn-exit" data-tab="exit">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M10 17l-1.4-1.4L12.2 12 8.6 8.4 10 7l5 5-5 5zM4 4h8v2H6v12h6v2H4V4zm14 0h2v16h-2V4z"/></svg>
+            المغادرة
+          </button></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="wrap">
+        <img class="logo-hero" src="https://i.imgur.com/37oMJHW.jpeg" alt="شعار على خلفية زرقاء">
+        <div>
+          <h1>دليل السياسات والإجراءات — الفريق الإعلامي في كلية الهمك</h1>
+          <p>هذا الدليل يوضح الرؤية والقيم والأدوار والمسؤوليات وآليات العمل داخل فريقنا. نرجو قراءة جميع الأقسام والرجوع إليها خلال العمل التطوعي.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Panels -->
+  <main class="panels container">
+
+    <!-- Tab: Works -->
+    <section id="panel-works" class="panel" role="tabpanel" aria-labelledby="tab-btn-works">
+      <span class="badge special">من أعمال الفريق</span>
+      <h2>مؤتمر الطاقات المتجددة 2025</h2>
+      <p>نستعرض هنا بعض الصور من تغطيتنا الإعلامية لمؤتمر الطاقات المتجددة الذي أقيم في يونيو 2025، والذي شهد مشاركة واسعة من الباحثين والمختصين في مجال الطاقة المستدامة.</p>
+      
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="https://i.imgur.com/n8k15hx.jpeg" alt="صورة من مؤتمر الطاقات المتجددة" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="https://i.imgur.com/b6lCVOL.jpeg" alt="صورة من مؤتمر الطاقات المتجددة" loading="lazy">
+        </div>
+      </div>
+      
+      <div class="note">
+        <strong>ملاحظة:</strong> هذه مجرد عينة من أعمالنا الإعلامية. للاطلاع على المزيد من الأعمال والتغطيات، تابعونا على صفحاتنا على وسائل التواصل الاجتماعي.
+      </div>
+    </section>
+
+    <!-- Tab: Intro -->
+    <section id="panel-intro" class="panel active" role="tabpanel" aria-labelledby="tab-btn-intro">
+      <span class="badge">المقدمة</span>
+      <p>
+        للحرص على دعم وتمكين المتطوعين في فريقنا لدينا سياسات يمكنك قراءتها في هذا الموقع، هذه السياسات تشرح كيف يجب أن يتم التعامل بين الطرفين (المتطوع وإدارة الفريق)، تهدف هذه السياسات لصنع تفاهم مشترك وبناء نظام عادل داخل الفريق والتعامل بالمساواة وتوضيح الأدوار والمسؤوليات لتحقيق أعلى معايير العمل.
+      </p>
+      <p>
+        نرجو أن يقدم لكم هذا الدليل الكثير من المعلومات التي ستحتاجونها للعمل في أدواركم معنا، نطلب منكم قراءة كامل الأقسام قبل البدء وأن تعودوا إليها في أثناء العمل التطوعي، إذا كان لديكم أي أسئلة رجاء اطرحوها علينا لتوضيح أي شيء غير واضح أو أي شيء لم نقم بتغطيته في هذا الدليل.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>رؤية المؤسسة وأهدافها</h3>
+          <ul>
+            <li>يرى الفريق أنّ الأدوات الإعلامية يجب أن تكون بيد الشباب السوري الراغبين في تطوير بلدهم وبنائه.</li>
+            <li>ويحقّ لهم تعلّم استخدامها بالطريقة الصحيحة لإيصال الرسائل الهادفة والسامية.</li>
+            <li>وأن يُعينهم ذلك في حياتهم العملية، وأن يوظّفوها في أعمالهم الخاصة.</li>
+          </ul>
+          <h3>قيم الفريق</h3>
+          <ul>
+            <li>الحقيقة، حتى لو كان التعايش معها أصعب، لا الخداع.</li>
+            <li>الوحدة والتكامل وتجاوز الاختلافات.</li>
+            <li>الحيوية، لا مكننة الحياة ورتابتها المملّة.</li>
+            <li>الإتقان والاحترافية، لا الارتجال الدائم.</li>
+            <li>البساطة، لا التعقيد غير الضروري.</li>
+          </ul>
+          <h3>أهداف الفريق</h3>
+          <ul>
+            <li>دعم المكتب الإعلامي في كليات جامعة دمشق، وتغطية الأحداث التي تحدث في الكلية.</li>
+            <li>تنمية قدرات ومهارات المتطوّعين الإعلامية، وتدريبهم على العمل الإعلامي.</li>
+            <li>تسليط الضوء على مواهب وقدرات طلاب الكلية، وعلى إنجازاتهم وابتكاراتهم.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>لماذا هذا الدليل؟</h3>
+          <ul>
+            <li>بناء تفاهم مشترك داخل الفريق.</li>
+            <li>توضيح الحقوق والمسؤوليات والأدوار.</li>
+            <li>تسهيل الوصول للمعلومة بنظام تبويبات بسيط وسريع.</li>
+          </ul>
+          <div class="note">
+            إن وجدت أي فكرة غير واضحة، راسل مسؤولك المباشر أو مدير الفريق لشرحها وتحديث هذا الدليل عند الحاجة.
+          </div>
+          <h3>استخدم الهوية البصرية</h3>
+          <p>تصميم الموقع والألوان مستوحاة من هوية الشعار: الأزرق العميق مع الأصفر الدافئ، مع حرص على البساطة والوضوح.</p>
+        </div>
+      </div>
+    </section>
+<!-- Tab: Rights & Responsibilities -->
+    <section id="panel-rights" class="panel" role="tabpanel" aria-labelledby="tab-btn-rights">
+      <h2>حقوق ومسؤوليات المتطوعين والإدارة</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>حقوق المتطوعين</h3>
+          <ul class="searchable">
+            <li>معرفة كيفية اختيارهم</li>
+            <li>أن يكونوا مستعدين/مدربين إذا دعت الحاجة</li>
+            <li>أن يكون لديهم من يتحدثون إليه حول العمل</li>
+            <li>معرفة ما هو متوقع منهم ولمن هم مسؤولون</li>
+            <li>معرفة الجهة التي يمكنهم اللجوء إليها في حال وجود مشاكل</li>
+            <li>كونهم جزءًا من الفريق والمشاركة في الاجتماعات والفعاليات</li>
+            <li>أن يكونوا على علم، وأن يطرحوا الأسئلة، ويحصلوا على إجابات</li>
+            <li>تلقي ملاحظات إيجابية وبناءة</li>
+            <li>العمل في بيئة آمنة ومؤمنة</li>
+            <li>أن يتم مكافأتهم والثناء عليهم</li>
+            <li>أن يرتكبوا أخطاء ويتعلموا منها</li>
+            <li>أن يتطوروا وينمووا</li>
+            <li>أن يقولوا "لا" للإجراءات الظالمة</li>
+            <li>أن يكون لديهم مشاعرهم وآراؤهم ومعتقداتهم</li>
+            <li>عدم تحمل مسؤولية مشاكل الآخرين</li>
+            <li>عدم التعرض للتمييز</li>
+            <li>أن يُحترموا</li>
+            <li>أن يُثق بهم، وأن يتم استشارتهم</li>
+            <li>الاستمتاع بالعمل</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>مسؤوليات المتطوعين</h3>
+          <ul class="searchable">
+            <li>أن يكونوا منفتحين الذهن</li>
+            <li>التصرف بمسؤولية</li>
+            <li>احترام المواعيد النهائية</li>
+            <li>الوفاء بالوعود</li>
+            <li>احترام الآخرين وحقوقهم</li>
+            <li>احترام الخصوصية</li>
+            <li>احترام معايير العمل وأهداف الفريق</li>
+            <li>الصدق في حال ظهور مشاكل</li>
+            <li>طلب الدعم عند الحاجة</li>
+            <li>التصرف بتسامح</li>
+            <li>تقديم الملاحظات</li>
+            <li>قبول النقد البناء</li>
+            <li>معرفة مسؤولياتهم</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>حقوق الإدارة</h3>
+          <ul class="searchable">
+            <li>طلب إنجاز المهام بطريقة محددة</li>
+            <li>وضع معايير للعمل</li>
+            <li>طلب صفات ومهارات معينة في المتطوعين</li>
+            <li>رفض المتطوعين غير المناسبين للعمل</li>
+            <li>طلب الالتزام والموثوقية والانضباط</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>مسؤوليات الإدارة</h3>
+          <ul class="searchable">
+            <li>تقديم فرص لجميع المتطوعين</li>
+            <li>تقدير واحترام جميع المتطوعين</li>
+            <li>تحديد أدوار واضحة</li>
+            <li>وضع قواعد تسمح بمشاركة فعالة</li>
+            <li>إجراء اختيار عادل</li>
+            <li>تقديم المعلومات اللازمة</li>
+            <li>توفير بيئة عمل آمنة ومريحة</li>
+            <li>تزويد المتطوعين بالتوجيه والتدريب وفرص التطوير</li>
+            <li>تنظيم العمل ووضع الخطط وتوضيحها للمتطوعين</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab: Org -->
+    <section id="panel-org" class="panel" role="tabpanel" aria-labelledby="tab-btn-org">
+      <h2>الهيكلية الإدارية والأقسام</h2>
+
+      <div class="card">
+        <h3>الفريق الإعلامي الجامعي</h3>
+        <ul class="searchable">
+          <li>يتبع لوزارة التعليم العالي مباشرة.</li>
+          <li>موجود في دمشق وإدلب وقريباً في كل محافظات سوريا.</li>
+          <li>في كل محافظة يوجد مجلس إدارة يرأسه مدير الفريق في هذه المحافظة وستة أعضاء آخرون:
+            <ul>
+              <li>مسؤول الإنتاج</li>
+              <li>مسؤول العلاقات الإعلامية</li>
+              <li>مسؤول التخطيط</li>
+              <li>مسؤول الموارد البشرية</li>
+              <li>مسؤول التسويق</li>
+              <li>مسؤول التدقيق</li>
+            </ul>
+          </li>
+          <li>وفي كل كلية في المدينة يوجد فريق خاص بالكلية.</li>
+        </ul>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h3>الهيكلية الخاصة بالفريق الإعلامي في كلية الهمك</h3>
+          <p class="searchable">يوجد إدارة للفريق فيها:</p>
+          <ul class="searchable">
+            <li>مدير الفريق</li>
+            <li>مسؤول الإنتاج</li>
+            <li>مسؤول الموارد البشرية</li>
+            <li>مسؤول المشاريع / عدة مسؤولين عن هذا الموضوع</li>
+            <li>مسؤول العلاقات العامة</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>مهام مدير الفريق</h3>
+          <ul class="searchable">
+            <li>التخطيط والتنظيم والتوجيه والرقابة</li>
+            <li>التنسيق بين أقسام الفريق</li>
+            <li>مشرف على عملية النشر</li>
+            <li>توزيع المهام وتقسيم فرق العمل وتنسيق العمل بينها</li>
+            <li>وضع دستور الفريق وسياسات العمل وضمان العمل بمضمونها</li>
+          </ul>
+          <h3>مهام مسؤول الإنتاج</h3>
+          <ul class="searchable">
+            <li>وضع معايير الإنتاج الفني</li>
+            <li>متابعة سير الإنتاج الفني</li>
+            <li>وضع عمليات مسجلة لتنفيذ المهام الإعلامية</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>مهام مسؤول العلاقات العامة</h3>
+          <ul class="searchable">
+            <li>الشراكات والعلاقات والتواصل الخارجي</li>
+            <li>تقوية وإدارة علاقات الفريق بمن حوله: (إدارة الكلية، اتحاد الطلبة، الفرق التطوعية الأخرى في الكلية، طلاب الكلية)</li>
+          </ul>
+          <h3>مهام مسؤول الموارد البشرية</h3>
+          <ul class="searchable">
+            <li>صلة الوصل بين الفريق والمتطوعين</li>
+            <li>متابعة المتطوعين وبناء جسر تواصل</li>
+            <li>تحفيز المتطوعين وتوجيههم</li>
+            <li>تقديم تقارير بشكل مستمر عن أعمال المتطوعين وإنجازاتهم</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>مسؤول المشاريع</h3>
+          <ul class="searchable">
+            <li>وضع خطة للمشاريع وشرح كيفية عملها للمتطوعين</li>
+            <li>متابعة عمل المتطوعين وعدم التدخل إلا في حالات: العمل غير المنظّم، ضعف المهنية، عمل قد يضر بصورة الفريق، الحاجة لنصيحة أو توجيه</li>
+            <li>التواصل والتنسيق بين المشاريع المختلفة</li>
+          </ul>
+          <div class="note searchable">
+            يجب على المتطوعين الالتزام بتوجيهات مسؤول المشاريع.
+          </div>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h3>تقسيمات الفريق</h3>
+          <ul class="searchable">
+            <li>قسم السوشال ميديا</li>
+            <li>قسم المشاريع</li>
+            <li>قسم التغطية الإعلامية</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>روابط التخصص داخل الفريق</h3>
+          <ul class="searchable">
+            <li>رابطة التصميم الغرافيكي</li>
+            <li>رابطة التصوير والمونتاج</li>
+            <li>رابطة التعليق الصوتي والتقديم الإعلامي</li>
+            <li>رابطة كتابة المحتوى والتسويق</li>
+          </ul>
+          <h4>أهمية الروابط وكيفية عملها</h4>
+          <ul class="searchable">
+            <li>مساحة آمنة ومحفزة لأعضاء الفريق المشتركين بنفس الاهتمامات ليشاركوا أعمالهم وآراءهم</li>
+            <li>تجد فيها منهاج تعليمي لتعلم أي مجال من المجالات في الفريق</li>
+            <li>فيها مصادر مختلفة للتغذية البصرية وأفكار كثيرة يمكن العمل عليها</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h3>قسم السوشال ميديا — المهام</h3>
+          <ul class="searchable">
+            <li>النشر المستمر ووضع خطط للنشر ومواعيد محددة حسب خوارزميات كل موقع</li>
+            <li>وضع خطط النشر الكاملة للفريق</li>
+            <li>تصميم بوستات وكتابة محتوى خاص لكل منشور، والعمل على سلاسل يتم نشرها بشكل دوري</li>
+            <li>وضع قواعد وقوانين النشر لكل صفحة وتحديد الفواصل بين الصفحات والتزام قوانين النشر</li>
+            <li>تصميم وكتابة البيانات الرسمية</li>
+            <li>العمل على الاستبيانات واستطلاعات الرأي الطلابية + نشر نتائجها</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>قسم المشاريع — المهام</h3>
+          <ul class="searchable">
+            <li>العمل على مشاريع متنوعة وتنمية قدرات الأعضاء</li>
+            <li>يضع أعضاء كل فريق مشروع خطة لمشروعهم يعمل عليها أعضاء فريق المشروع نفسه (تنظيم ذاتي بمساعدة مسؤول المشاريع)</li>
+            <li>المحتوى المراد تقديمه يجب أن يكون مستواه مناسباً أو أعلى بقليل من مستوى أعضاء الفريق</li>
+            <li>الالتزام بمواعيد تقديم المحتوى</li>
+            <li>التنسيق مع مسؤول المشاريع ليقوم بوضع خطة لنشر أعمال الفرق</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>قسم التغطية الإعلامية — المهام</h3>
+          <ul class="searchable">
+            <li>المهمة الأساسية: التغطية الإعلامية للفعاليات داخل الكلية</li>
+            <li>وضع خطط الفعاليات بشكل كامل ووضع خطة النشر بالتعاون مع قسم السوشال ميديا</li>
+            <li>تصميم الهويات البصرية</li>
+            <li>تصميم بروشورات، بوستات خاصة بالأحداث والفعاليات، إلخ..</li>
+            <li>التنسيق المستمر مع الفريق التنظيمي في الكلية</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab: Production -->
+    <section id="panel-prod" class="panel" role="tabpanel" aria-labelledby="tab-btn-prod">
+      <h2>الإنتاج الإعلامي</h2>
+      <div class="card">
+        <p class="searchable">
+          الخروج بفيديو ما ليس عملية بسيطة، فكلما كانت النتائج المطلوبة احترافية احتاج ذلك مجهوداً أكبر. لتسهيل وتنظيم هذا العمل وجعله مستداماً نتعلم كيف يتم العمل الإعلامي الرقمي.
+        </p>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <h3>مراحل العمل الإعلامي</h3>
+          <ol class="searchable">
+            <li>ما قبل الإنتاج (Pre-Production)</li>
+            <li>الإنتاج (Production)</li>
+            <li>ما بعد الإنتاج (Post-Production)</li>
+          </ol>
+          <h4>ما قبل الإنتاج</h4>
+          <ul class="searchable">
+            <li>قد يكون الفيديو ضمن سلسلة؛ يجب تحديد موقعه في خطة النشر/التسويق/التغطية.</li>
+            <li>البحث عن ستايل مناسب ومشاهدة نماذج (التغذية البصرية).</li>
+            <li>تقسيم الفيديو لأجزاء والاجتماع مع المصور والمونتير والمعلّق الصوتي لتحديد التصوير والصوت المناسب.</li>
+            <li>كتابة سكريبت كامل (كاتب المحتوى/يمكن لأي عضو تعلم كتابته).</li>
+            <li>توزيع المهام وبدء العمل.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>الإنتاج</h3>
+          <ul class="searchable">
+            <li>تصوير اللقطات المتفق عليها مع الانتباه للمكان والإضاءة والزاوية.</li>
+            <li>تسجيل الصوت المناسب (قد يتضمن تعليقاً صوتياً أو أصواتاً محيطية).</li>
+            <li>يفضل ميكروفون عالي الجودة عند جمع الأصوات من البيئة.</li>
+          </ul>
+          <h3>ما بعد الإنتاج</h3>
+          <ul class="searchable">
+            <li>يكون التعليق الصوتي جاهزاً واللقطات مصوّرة.</li>
+            <li>المونتير يجمع المواد ويحرّر الفيديو.</li>
+            <li>كاتب المحتوى وإدارة السوشال يحددان السياق الأنسب للنشر.</li>
+            <li>المصمم يجهز بوست تشويقي.</li>
+          </ul>
+          <div class="note searchable">
+            يمكن أحياناً إنتاج فيديو ممتاز دون المرور بكل المراحل حسب نوع الفيديو وتعقيده.
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>التنسيق والأرشفة</h3>
+          <ul class="searchable">
+            <li>يجب التنسيق المسبق بين الجميع لتحقيق النتيجة المرغوبة، فالارتجال غير مرحّب به.</li>
+            <li>يتم تسليم جميع المواد المصوّرة إلى مسؤول الأرشيف / مدير الفريق / المسؤول عن التغطية الإعلامية.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab: Training -->
+    <section id="panel-train" class="panel" role="tabpanel" aria-labelledby="tab-btn-train">
+      <h2>التدريب والمدخل</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>رؤية التدريب</h3>
+          <p class="searchable">
+            رؤية الفريق أن المتطوع يحتاج للتدريب وهذا واجب على الفريق أن يقوم بتقديمه، لكن أيضاً يمكن للمتطوع أن يطور نفسه عبر التعلم الذاتي، إذ أن الكثير من العاملين في المجالات الإبداعية تعلموا عبر الإنترنت.
+          </p>
+          <h3>المدخل والتهيئة</h3>
+          <ul class="searchable">
+            <li>نظرة عامة على المنظمة، بما في ذلك أهدافنا وقيمنا.</li>
+            <li>تعريف بالدور والواجبات، وما هو متاح من دعم وقنوات تواصل.</li>
+            <li>التعريف بالموظفين والمتطوعين.</li>
+            <li>معلومات عن المشروع.</li>
+            <li>التعريف بسياسات التطوع وسياسات المنظمة.</li>
+            <li>إحاطة بالصحة والسلامة.</li>
+            <li>اتفاقية المتطوع.</li>
+          </ul>
+          <p class="searchable">سيحصل المتطوعون على سماحية الوصول لـِ "مقدمة إلى التطوع في الفريق الإعلامي" بكل السياسات والإجراءات والمعلومات العملية اللازمة.</p>
+        </div>
+
+        <div class="card">
+          <h3>التدريب أثناء الدور</h3>
+          <p class="searchable">تُقدَّم التعليمات والإرشاد والدعم لكل متطوع بما يتناسب مع دوره ولدعم تطوّره الشخصي.</p>
+          <h3>الفترة التجريبية</h3>
+          <ul class="searchable">
+            <li>يوصى بستة أسابيع كمدة مناسبة، ويمكن تمديدها إذا دعت الحاجة.</li>
+            <li>بعدها يتلقى المتطوع تغذية راجعة ويناقش الاستمرار أو الملاءمة للدور.</li>
+            <li>يحتفظ الفريق بحق إنهاء التعيين التطوعي في أي وقت باحترام واتصال واضح.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>خريطة الطريق وبناء المعرض</h3>
+          <ul class="searchable">
+            <li>تقديم خريطة طريق توضح ما يجب تعلمه خلال الرحلة.</li>
+            <li>تطبيق عملي داخل الفريق مع توثيق الأعمال باسم المتطوع.</li>
+            <li>بناء معرض أعمال (Portfolio) وشبكة علاقات مهنية تساعد لاحقاً في إيجاد فرص عمل.</li>
+          </ul>
+          <div class="note searchable">
+            ملاحظة هامة: واجب على المتطوع الذي حصل على تدريب داخل الفريق أن يقوم بدعم الفريق على الأقل لمدة شهر بعد انتهاء التدريب.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab: Conduct & Rewards -->
+    <section id="panel-conduct" class="panel" role="tabpanel" aria-labelledby="tab-btn-conduct">
+      <h2>مدونة السلوك وآلية المكافآت</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>مدونة السلوك</h3>
+          <ul class="searchable">
+            <li><b>الوحدة والتعاون:</b> نلتزم بروح الفريق الواحد بعيداً عن الحساسيات والخلافات، إيماناً بأن نجاح الفرد هو نجاح الجميع.</li>
+            <li><b>الاحترام المتبادل:</b> نقدّر آراء بعضنا مهما اختلفت، ونحرص على بناء بيئة يسودها التقدير والثّقة المتبادلة.</li>
+            <li><b>التواصل البناء:</b> كل إشكال أو سوء فهم يُعالج بالحوار الهادئ والمسؤول بعيداً عن التوتر والانفعال.</li>
+            <li><b>عدالة توزيع المهام:</b> يمنح كل عضو دوره وفرصته في الإبداع والعطاء، دون تهميش أو تفريق.</li>
+            <li><b>التطوير المستمر:</b> نلتزم بالتعلم المستمر وتبادل الخبرات ودعم المبادرات التدريبية والفكرية.</li>
+            <li><b>روح المبادرة:</b> القيادة مسؤولية مشتركة، وكل فرد قادر على أن يكون مبادراً في موقعه.</li>
+            <li><b>الإيجابية في العمل:</b> نعمل بمحبة وحماس ونصنع أجواء مريحة تشجع على الإنجاز والإبداع.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>آلية المكافآت</h3>
+          <p class="searchable">تحفيزاً على التميز، تُقدَّم مكافآت شهرية لعشرة أعضاء متميزين، ويكافأ أيضاً أفضل مدير لكل فريق وقد تُمنح مكافأة عينية لفريق الكلية.</p>
+          <h4>معايير الاختيار</h4>
+          <ol class="searchable">
+            <li>الالتزام بحضور الاجتماعات وتنفيذ المهام في الوقت المحدد.</li>
+            <li>مستوى جودة العمل المقدم (تصميم، تسويق، كتابة، تصوير، مونتاج، تعليق صوتي).</li>
+            <li>طرح أفكار جديدة ومبتكرة (الإبداع).</li>
+            <li>العمل بروح جماعية والتعاون مع الفريق.</li>
+            <li>المشاركة والتفاعل في الأنشطة والنقاشات.</li>
+            <li>أي مكافأة تُسجَّل من قبل المدير وحسب وضع الفريق، مع قابلية تعديل المعايير مستقبلاً.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab: Issues -->
+    <section id="panel-issues" class="panel" role="tabpanel" aria-labelledby="tab-btn-issues">
+      <h2>حل المشكلات والتواصل</h2>
+
+      <div class="grid">
+        <div class="card">
+          <h3>حل المشكلات</h3>
+          <p class="searchable">نسعى لمعالجة كل القضايا بعدل وموضوعية واتساق، وسماع آراء المتطوعين واتخاذ الإجراءات اللازمة بفاعلية.</p>
+          <h4>إذا كان لدى متطوع شكوى:</h4>
+          <ul class="searchable">
+            <li>أولاً: محاولة الحل غير الرسمي عبر التواصل مع المسؤول.</li>
+            <li>إن لم يُحل، تُرفع لمدير الفريق.</li>
+          </ul>
+          <h4>إذا كانت هناك مشكلة أداء:</h4>
+          <ul class="searchable">
+            <li>غالباً ترتبط باحتياجات تدريبية أو نقص دعم؛ تتم المراجعة بانتظام خلال الإشراف.</li>
+            <li>حال استمرار القلق، اجتماع رسمي مع المتطوع لسماع الرد والملاحظات.</li>
+            <li>قد يُصدر تنبيه غير رسمي مع خطوات للتحسين.</li>
+            <li>إن لم تُحل المشكلة: اجتماع يشمل المتطوع ومشرفه ومديره وقد يؤدي لتحذير رسمي ثم إنهاء التطوع بعد تحذير آخر.</li>
+            <li>في الحالات الخطيرة (سرقة، مضايقة، عنف..) يُعلّق المتطوع فوراً أثناء التحقيق ويُبلّغ بالقرار خلال 14 يوماً.</li>
+            <li>يمكن الاعتراض لدى الإدارة والرد خلال 14 يوماً، وبسرية كاملة.</li>
+            <li>يحق للمتطوع اصطحاب متطوع آخر/صديق في الاجتماعات.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>التواصل، الاستشارة، والملاحظات</h3>
+          <ul class="searchable">
+            <li>تحديد أفضل طريقة لإبلاغ الأخبار والأنشطة حسب الدور.</li>
+            <li>حرص المسؤول على توصيل المعلومات؛ ويمكن حضور الاجتماعات عند الملاءمة.</li>
+            <li>تشجيع دائم على تقديم الملاحظات ومشاركة الآراء.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab: Exit -->
+    <section id="panel-exit" class="panel" role="tabpanel" aria-labelledby="tab-btn-exit">
+      <h2>المضي قدماً / المغادرة</h2>
+      <div class="card">
+        <ol class="searchable">
+          <li><b>الإشعار المسبق:</b> إشعار لا يقل عن ثلاثة أيام، وإبلاغ الموارد البشرية داخل الفريق.</li>
+          <li><b>التواصل مع المسؤولين:</b> مناقشة الأسباب والتأكد من القرار.</li>
+          <li><b>التسليم الكامل للمهام:</b>
+            <ul>
+              <li>نقل الملفات/الأعمال غير المكتملة إلى عضو آخر.</li>
+              <li>تحديث التقارير والملاحظات ذات الصلة.</li>
+              <li>إيقاف الأعمال المعتمدة على حسابات أو أدوات الفريق.</li>
+            </ul>
+          </li>
+          <li><b>التقييم النهائي:</b> استبيان يوضح التجربة وأسباب الانسحاب لتحسين البيئة.</li>
+          <li><b>التزام السرية:</b> المحافظة على سرية المعلومات وعدم استخدام محتوى/معلومات حساسة بعد المغادرة.</li>
+          <li><b>إجراءات بعد المغادرة:</b> شكر العضو ومنحه فرصة العودة إن تمّت الإجراءات. أما المغادرة دون إجراءات فتلزم المسؤولية وتلغي حق العودة.</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <img src="https://i.imgur.com/hiqdYjs.jpeg" alt="شعار" style="width:58px;height:58px;border-radius:50%;background:#fff;padding:6px;box-shadow:0 6px 20px rgba(0,0,0,.12);display:block;margin:0 auto 10px auto">
+    <div>كلية الهندسة الميكانيكية والكهربائية — جامعة دمشق</div>
+    <div style="font-size:.95rem">© الفريق الإعلامي — جميع الحقوق محفوظة</div>
+  </footer>
+
+  <div class="floating-buttons">
+    <button class="float-btn" id="toTopBtn" title="العودة للأعلى">
+      ↑ أعلى
+    </button>
+  </div>
+
+  <script>
+    // Theme toggle functionality
+    const themeToggle = document.getElementById('themeToggle');
+    const themeText = document.getElementById('themeText');
+    const htmlElement = document.documentElement;
+    
+    // Check for saved theme preference or default to light mode
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    htmlElement.setAttribute('data-theme', currentTheme);
+    updateThemeText(currentTheme);
+    
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = htmlElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+      
+      htmlElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      updateThemeText(newTheme);
+    });
+    
+    function updateThemeText(theme) {
+      themeText.textContent = theme === 'light' ? 'الوضع الداكن' : 'الوضع الفاتح';
+    }
+
+    // Tabs logic with deep-linking #tab=
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    const panels = {
+      works: document.getElementById('panel-works'),
+      intro: document.getElementById('panel-intro'),
+      rights: document.getElementById('panel-rights'),
+      org: document.getElementById('panel-org'),
+      prod: document.getElementById('panel-prod'),
+      train: document.getElementById('panel-train'),
+      conduct: document.getElementById('panel-conduct'),
+      issues: document.getElementById('panel-issues'),
+      exit: document.getElementById('panel-exit')
+    };
+    
+    function activateTab(id, scrollTop=true){
+      tabButtons.forEach(btn=>{
+        const selected = btn.dataset.tab === id;
+        btn.setAttribute('aria-selected', selected ? 'true':'false');
+      });
+      Object.entries(panels).forEach(([pid, el])=>{
+        el.classList.toggle('active', pid===id);
+      });
+      
+      // Scroll active tab into view
+      const activeTab = document.querySelector(`.tab-btn[data-tab="${id}"]`);
+      if(activeTab){
+        activeTab.scrollIntoView({behavior:'smooth', block:'nearest', inline:'center'});
+      }
+      
+      const newHash = '#tab=' + id;
+      if(location.hash !== newHash){
+        history.replaceState(null, '', newHash);
+      }
+      if(scrollTop) window.scrollTo({top:0, behavior:'smooth'});
+    }
+    
+    tabButtons.forEach(btn=>{
+      btn.addEventListener('click', ()=>activateTab(btn.dataset.tab));
+      btn.addEventListener('keydown', (e)=>{
+        const idx = [...tabButtons].indexOf(btn);
+        if(e.key==='ArrowLeft'){ (tabButtons[idx-1]||tabButtons[tabButtons.length-1]).focus(); }
+        if(e.key==='ArrowRight'){ (tabButtons[idx+1]||tabButtons[0]).focus(); }
+      });
+    });
+    
+    function initFromHash(){
+      const m = location.hash.match(/#tab=([a-z]+)/);
+      const id = m?.[1] && panels[m[1]] ? m[1] : 'intro';
+      activateTab(id, false);
+    }
+    window.addEventListener('hashchange', initFromHash);
+    initFromHash();
+
+    // Scroll to top button functionality
+    const toTopBtn = document.getElementById('toTopBtn');
+    const floatingButtons = document.querySelector('.floating-buttons');
+
+    // Show/hide button based on scroll position
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 200) {
+        floatingButtons.classList.add('show');
+      } else {
+        floatingButtons.classList.remove('show');
+      }
+    });
+
+    // Scroll to top when clicked
+    toTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+      
+      // Hide button after clicking (optional)
+      setTimeout(() => {
+        floatingButtons.classList.remove('show');
+      }, 500);
+    });
+</script>
+</body>
+</html>
